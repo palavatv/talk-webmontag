@@ -96,6 +96,30 @@
 
         <section>
           <section>
+            <h2>Signaling</h2>
+          </section>
+          <section>
+            <img src="images/signaling-server.png">
+          </section>
+          <section>
+            <img src="images/join.png">
+          </section>
+          <section>
+            <img src="images/offer-answer.png">
+          </section>
+          <section>
+            <img src="images/stun1.png">
+          </section>
+          <section>
+            <img src="images/stun2.png">
+          </section>
+          <section>
+            <img src="images/peerconnection.png">
+          </section>
+        </section>
+
+        <section>
+          <section>
             <h2>palava software stack<h2>
             <h4> completely free & open source</h4>
           </section>
@@ -114,6 +138,36 @@
           <section>
             <h2>palava portal</h2>
             <h4>web plattform using the palava client</h4>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Signaling Protocol</h3>
+            <p class="fragment">A few defined JSON messages</p>
+          </section>
+
+          <section>
+            <h3>Client → Server</h3><br/>
+            <p><code>join_room(room_id, status)</code></p>
+            <p><code>send_to_peer(peer_id, data)</code></p>
+            <p><code>update_status(status)</code></p>
+          </section>
+
+          <section>
+            <h3>Server → Client</h3><br/>
+            <p><code>joined_room(me, peers)</code></p>
+            <p><code>peer_updated_status(peer_id, peer_status)</code></p>
+            <p><code>error(id, message)</code></p>
+            <p><code>shutdown(seconds)</code></p>
+          </section>
+
+          <section>
+            <h3>Client → Client</h3>
+            <h4>via <code>send_to_peer</code></h4><br/>
+            <p><code>offer(sdp)</code></p>
+            <p><code>answer(sdp)</code></p>
+            <p><code>ice_candidate(...)</code></p>
           </section>
         </section>
         
@@ -156,6 +210,31 @@
           </section>
 
           <section>
+            <h2>Ideas</h2>
+            <h4>"Franchising"</h4>
+          </section>
+
+          <section>
+            <h2>Ideas</h2>
+            <h4>Easy Deployment</h4>
+          </section>
+
+          <section>
+            <h2>Ideas</h2>
+            <h4>More decentralisation</h4>
+          </section>
+
+          <section>
+            <h2>Ideas</h2>
+            <h4>Mobile</h4>
+          </section>
+
+          <section>
+            <h2>Ideas</h2>
+            <h4>Features: Text chat, Screen sharing, "instant messaging"?</h4>
+          </section>
+
+          <section>
             <h2> How can you help?</h2>
             <h4> Coding</h4>
             <h4> Designing</h4>
@@ -177,12 +256,6 @@
             <h2>Get in contact with me</h2>
             <h4><a href="https://twitter.com/faraoso">@faraoso</a></h4>
             <h4>Email & Jabber: marius@rasumi.net</h4>
-          </section>
-
-          <section>
-            <h3>One more thing</h3>
-            <h2><a href="http://signaling.io">signaling.io</a></h2>
-            <p>Jan and I are working on a signaling hoster using the palava protocol</p>
           </section>
         </section>
       </div>
